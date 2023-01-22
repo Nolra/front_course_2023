@@ -1,0 +1,64 @@
+@font-face { /* это подключение шрифта, чтобы использовать в этом css файле (копируем) */
+  font-display: block;
+  font-family: 'Poppins-Light';
+  src: url('./fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.head {
+	color: #3f51b5;
+	font-size: 50px;
+	padding-bottom: 10px;
+	border: 3px solid #000;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.some-box,
+.some-box-2 {
+	width: 100px;
+	height: 100px;
+	background: #000;
+}
+
+.some-box-2 {
+	background: red;
+}
+
+.box-wrapper {
+	display: flex; /* флексим в dev tools */
+	align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+	padding-left: 20px;
+}
+
+.list-item {
+	list-style: none;
+	font-size: 14px;
+	font-family: 'Poppins-Light';
+	cursor: pointer;  /* вид курсора указущий палец */
+}
+
+.link {
+	color: #000;
+	text-decoration: none;
+}
+
+.link:hover { /* событие наведение курсора на элемент с классом .link */
+	color: #666;
+	text-decoration: underline;
+}
+
+.image {
+	max-width: 50%;
+	margin: 100px auto; /*  верх&низ лево&право  */
+	margin: 100px auto 100px auto; /* верх право низ лево */
+	display: block;
+}
+
+
+
