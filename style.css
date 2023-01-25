@@ -1,0 +1,90 @@
+/* медиа запросы === адаптивность */
+
+/*
+
+Базовый синтаксис:
+@media условие { 
+	стили, которые становятся активными 
+	при соответствии условию 
+}
+
+*/
+
+@media (min-width: 320px) {
+	/* мобильные */ 
+	.forms,
+	.text-inputs,
+	.button-inputs,
+	.checkbox-inputs,
+	.checkbox-inputs,
+	.radio-inputs {
+		display: flex;
+	    justify-content: space-around;
+	    padding: 40px 10px;
+	    flex-direction: column;
+	}
+	.checkbox-inputs,
+	.radio-inputs {
+		justify-content: space-evenly;
+	    padding: 30px 10px;
+	    max-width: 100px;
+	    margin: auto;
+	    flex-direction: row;
+	}
+	/* оформили сами элементы в контейнерах */
+	.forms form {
+		padding: 20px;
+		border: 2px solid #000;
+		margin-bottom: 10px;
+	}
+	.text-inputs input,
+	.button-inputs input,
+	.checkbox-inputs input,
+	.radio-inputs input {
+		border: 1px solid blue;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.button-inputs input {
+		border: 1px solid black;
+	}
+}
+
+@media (min-width: 768px) { 
+	/* Стили для устройств с маленьким экраном, 
+	размерами 768px - 991px (планшеты и подобные) */ 
+	.forms,
+	.text-inputs,
+	.button-inputs,
+	.checkbox-inputs,
+	.checkbox-inputs,
+	.radio-inputs {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 992px) {  
+	/* Стили для ноутбуков и компьютеров 
+	с экранами в диапазоне 992px - 1199px */ 
+
+
+
+}
+
+@media (min-width: 1200px) {  
+	/* Стили для устройств с большой шириной экрана >1200px */ 
+	/* оформили контейнеры для элементов */
+}
+
+
+
+@media (max-width: 1200px) {  
+	/* Стили для устройств с большой шириной экрана >1200px */ 
+	/* оформили контейнеры для элементов */
+}
+
+
+/* Использовать эти медиа-запросы нужно исключительно в таком порядке! */
+
+
+
