@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Functions Loops</title>
+</head>
+<body>
+
+	<h1>
+		Functions Loops
+	</h1>
+
+	<!-- 
+		Циклы - https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration
+		Функции - https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
+
+
+		Домашнее задание:
+
+		1)	Выведите чётные числа
+			При помощи цикла for выведите чётные числа от 2 до 10.
+			Для проверки на чётность используйте оператор получения остатка от деления % - if (i % 2 == 0)
+
+
+		1.1) Перепишите код, заменив цикл for на while, без изменения поведения цикла.
+
+		for (let i = 0; i < 3; i++) {
+		  console.log( `number ${i}!` );
+		}
+
+		2) 
+
+		Перепишите код в двух синтаксисах (одну можно закомментировать) Function Expression и стрелочной функцией
+		Сейчас в функцию ask передаются анонимные каллбек функции, дайте им имена и передавайте как каллбек через переменную описания.
+
+
+		function ask(question, answer, yes, no) {
+		  question();
+		  if (answer) yes()
+		  else no();
+		}
+
+		ask(
+		  function() { console.log("Вы согласны?"); },
+		  true,
+		  function() { console.log("Вы согласились."); },
+		  function() { console.log("Вы отказались."); }
+		);
+
+	 -->
+
+</body>
+	<script src="./loops.js"></script>
+	<script src="./functions.js"></script>	
+</html>
