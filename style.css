@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+.url-generator {
+	max-width: 750px;
+	padding: 100px 10px;
+	margin: auto;
+}
+.url-generator__head {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.url-generator__subhead {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+.url-generator__inputs {
+	display: flex;
+	justify-content: space-between;
+}
+.url-generator__input {
+	width: calc(40% - 10px);
+	padding: 20px;
+	font-size: 20px;
+}
+.url-generator__add {
+	width: calc(20% - 10px);
+	padding: 20px;
+	font-size: 20px;
+}
+.url-generator__links {
+	text-align: center;
+}
+.url-generator__link {
+	color: #000;
+	font-size: 16px;
+	text-decoration: underline;
+	display: block;
+	padding: 10px 0;
+	font-family: sans-serif;
+}
