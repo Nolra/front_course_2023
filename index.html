@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion & Class</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<!-- 
+		https://learn.javascript.ru/classes
+		https://learn.javascript.ru/recursion
+		https://doka.guide/js/recursion/ 
+
+		Домашнее задание: 
+		1. Наследование и прототипирование (классы)
+
+		Реализуйте класс Student, 
+		который будет наследовать от класса User. 
+		Этот класс должен иметь следующие свойства: 
+		name (имя, наследуется от User), 
+		surname (фамилия, наследуется от User), 
+		year (год поступления в вуз, не наследуется от User).
+
+		Класс должен иметь метод getFullName() (наследуется от User), 
+		с помощью которого можно вывести одновременно имя и фамилию студента.
+
+		Также класс должен иметь метод getCourse() (не наследуется от User), 
+		который будет выводить текущий курс студента (от 1 до 5). 
+
+		Курс вычисляется так: нужно от текущего года отнять год поступления в вуз. 
+
+		Текущий год получите самостоятельно.
+
+
+		Вот так должен работать наш класс:
+
+		let student = new Student('Иван', 'Иванов', 2020);
+
+		console.log(student.name); //выведет 'Иван'
+		console.log(student.surname); //выведет 'Иванов'
+		console.log(student.getFullName()); //выведет 'Иван Иванов'
+		console.log(student.year); //выведет 2020
+		console.log(student.getCourse()); //выведет 3 - третий курс, так как текущий год 2023
+
+		Вот так должен выглядеть класс User, от которого наследуется наш Student:
+
+		class User {
+			constructor(name, surname) {
+				this.name = name;
+				this.surname = surname;
+			}
+
+			getFullName() {
+				return this.name + ' ' + this.surname;
+			}
+		}
+
+
+		2. Рекурсия.
+		Найти максимальное число в массиве, содержащем числа или другие массивы чисел
+		Решите это итеративно (через цикл) и отдельно затем рекурсивно.
+
+		let numbers = [2, 4, 10, [12, 4, [100, 99], 4], [3, 2, 99], 0];
+	-->
+	<script charset="utf-8" src="./recursion.js"></script>
+	<script charset="utf-8" src="./class.js"></script>
+</body>
+</html>
