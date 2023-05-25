@@ -1,2 +1,2 @@
-# front-course
-Группа Январь html to ts
+# front-course - html to ts
+January 2023
