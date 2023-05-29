@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+.timer {
+	max-width: 750px;
+	padding: 100px 10px;
+	margin: auto;
+}
+.timer__head {
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+.timer__display {
+	padding: 20px 0 50px;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: center;
+}
+.timer__play,
+.timer__pause,
+.timer__reset,
+.timer__stop {
+	width: calc(25% - 10px);
+	padding: 20px;
+	font-size: 20px;
+}
+
+
+
+
+
